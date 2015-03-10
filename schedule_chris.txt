@@ -1,0 +1,4 @@
+Schedule and deliverable:
+	- Implement user questionaire -- Wed 03/11 by 9pm (2hrs)
+	- Implement java display -- Sat 03/14 by 7pm (6hrs)
+	- Design and implement results screen -- Fri 03/13 by 7pm (3hrs)
