@@ -1,0 +1,4 @@
+Schedule and deliverable:
++   - Write information for the mission statement for index.php -- Wed 03/11 11:59 pm (est: 1hr)
++	- Design the look and feel of welcome homepage for index.php, main.css, interact.js -- Th 03/12 11:59 pm (est: 4hrs)
++	- Display hearing test after user logs in for test.php -- Friday 03/13 11:59 pm(est: 6hrs)
