@@ -1,0 +1,4 @@
+Schedule and deliverable:
+	- Design and draft homepage for index.html -- Wednesday 03/11 12pm (estimate: 2hrs)
+	- Implement User registration and login webpage -- Friday 03/13 (estimate: 3 hrs)
+	- Draft About Us page for about.html -- Sunday 03/15 12pm (estimate: 3hrs)
