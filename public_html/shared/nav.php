@@ -26,6 +26,7 @@
                     </li>
 <?php
 
+	session_start();
 	if(!isset($_SESSION['sess_user_id'])){
 		echo "<li><a href=\"login/login.html\">Login</a></li>";
 	}
