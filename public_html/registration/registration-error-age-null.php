@@ -20,6 +20,8 @@
     <!-- Custom CSS -->
     <link href="../css/one-page-wonder.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="../img/rush_logo.ico">
+
     <script type="text/javascript" src="../js/checkPasswords.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -91,6 +93,33 @@
 
 					</select>
 
+					<select name="language" class="form-control">
+
+						<option value="None" disabled selected style="display:none;">Language</option>
+
+						<option value="Bengali">Bengali</option>"
+						<option value="English">English</option>"
+						<option value="French">French</option>"
+						<option value="German">German</option>"
+						<option value="Hindi">Hindi</option>"
+						<option value="Japanese">Japanese</option>"
+						<option value="Javanese">Javanese</option>"
+						<option value="Korean">Korean</option>"
+						<option value="Mandarin Chinese">Mandarin Chinese</option>"
+						<option value="Marathi">Marathi</option>"
+						<option value="Portugese">Portugese</option>"
+						<option value="Russian">Russian</option>"
+						<option value="Spanish">Spanish</option>"
+						<option value="Tamil">Tamil</option>"
+						<option value="Telugu">Telugu</option>"
+						<option value="Turkish">Turkish</option>"
+						<option value="Urdu">Urdu</option>"
+						<option value="Vietnamese">Vietnamese</option>"
+						<option value="Wu Chinese">Wu Chinese</option>"
+						<option value="Yue Chinese / Cantonese">Cantonese</option>"
+
+					</select>
+
 				<br>
 
 				<input type="text" name="username" class="form-control" placeholder="Username" required>
@@ -109,13 +138,17 @@
 
     	</div> <!-- /container -->
 
-    	<hr class="featurette-divider">
+    	<hr class="featurette-divider" style="border-color: black">
 
-	<!-- Footer -->
+        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Auditory Training -- Rush Medical University</p>
+                    <p>Auditory Research Laboratory (ARL)</p>
+		    <p>Department of Communication Disorders and Sciences</p>
+		    <p>Rush University Medical Center</p>
+		    <p>203 Senn, 1653 W. Congress Parkway</p>
+		    <p>Chicago, IL 60612</p>
                 </div>
             </div>
         </footer>

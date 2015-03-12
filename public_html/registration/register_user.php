@@ -71,7 +71,7 @@
 	    exit();
 	}
 
-        $sql="INSERT INTO auditory_users (firstName, lastName, userName, passWord, email, age, language) VALUES ('$firstName', '$lastName', '$userName', '$password', '$email', '$age', '$language')";
+        $sql="INSERT INTO auditory_users (firstname, lastname, username, password, email, age, language) VALUES ('$firstName', '$lastName', '$userName', '$password', '$email', '$age', '$language')";
 
         if(!mysqli_query($con, $sql)){
         	die('Error: ' . mysqli_error($con));
@@ -84,6 +84,10 @@
 
 							<h2>Thank you for registering.</h2>
 
+							<h2><a href="questionnaire.html">Complete the questionnaire.</a></h2>
+
+							<p>You have the option to complete it at a later time, but you will not be able to complete in Auditory Training until it is completed.</p>
+
 							<a href="../index.html">Click here to return to the homepage.</a>
 
 						</center>
@@ -91,6 +95,10 @@
 					</div>
 
 				</body>';
+		session_regenerate_id();
+		$_SESSION['sess_user_id'] = $row['id'];
+		$_SESSION['sess_username'] = $row['username'];
+		session_write_close();
 		mysqli_close($con);
 
 ?>

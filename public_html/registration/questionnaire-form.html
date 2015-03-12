@@ -9,15 +9,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About Us</title>
+    <title>Questionnaire</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="img/rush_logo.ico">
+    <!-- Custom styles for this template -->
+    <link href="../css/signin.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/one-page-wonder.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../img/rush_logo.ico">
+
+    <script type="text/javascript" src="../js/checkPasswords.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,35 +46,41 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="index.html">Home Page</a>
+                <a class="navbar-brand topnav" href="../index.html">Home Page</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-			<a href="registration/registration.php">Register</a>
-                    </li>
-		    <li>
-			<a href="login/login.html">Login</a>
-		    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
+    <!-- Page Content -->
     <div class="container">
 
-    	<hr class="featurette-divider">
+	<div class="container">
 
-	<!-- Footer -->
+      		<form class="form-signin" style="max-width: 800px" action="questionnaire_user.php" method="post">
+
+      			<h1 class="form-signin-heading" align="center">User Questionnaire</h1>
+
+			<div class="row">
+			    <div class="col-lg-8">
+
+				<p>What is the answer to the first question?</p>
+				<input type="radio" name="q1" value="a1">Answer 1<br>
+				<input type="radio" name="q1" value="a2">Answer 2<br>
+
+			    </div>
+			</div>
+
+    			<center><input class="btn btn-lg btn-primary btn-block" style="width: 330px" type="submit" value="Complete"></center>
+
+    		</form>
+
+    	</div> <!-- /container -->
+
+    	<hr class="featurette-divider" style="border-color: black">
+
+        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">

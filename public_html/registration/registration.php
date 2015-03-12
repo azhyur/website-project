@@ -20,6 +20,8 @@
     <!-- Custom CSS -->
     <link href="../css/one-page-wonder.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="../img/rush_logo.ico">
+
     <script type="text/javascript" src="../js/checkPasswords.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -58,7 +60,7 @@
 
       		<form class="form-signin" action="register_user.php" method="post">
 
-      			<h2 class="form-signin-heading" align="center">User Registration</h2>
+      			<h1 class="form-signin-heading" align="center">User Registration</h1>
 
 				<input type="text" name="firstname" class="form-control" placeholder="First Name" required autofocus>
 				<input type="text" name="lastname" class="form-control" placeholder="Last Name" required>
@@ -126,13 +128,17 @@
 
     	</div> <!-- /container -->
 
-    	<hr class="featurette-divider">
+    	<hr class="featurette-divider" style="border-color: black">
 
-	<!-- Footer -->
+        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Auditory Training -- Rush Medical University</p>
+                    <p>Auditory Research Laboratory (ARL)</p>
+		    <p>Department of Communication Disorders and Sciences</p>
+		    <p>Rush University Medical Center</p>
+		    <p>203 Senn, 1653 W. Congress Parkway</p>
+		    <p>Chicago, IL 60612</p>
                 </div>
             </div>
         </footer>
