@@ -57,7 +57,7 @@
 
 															<h2>An E-mail has been sent containing your password.</h2>
 
-															<a href="../index.html">Click here to return to the homepage.</a>
+															<a href="../index.php">Click here to return to the homepage.</a>
 
 														</center>
 

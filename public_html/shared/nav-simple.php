@@ -12,27 +12,6 @@
                 </button>
                 <a class="navbar-brand topnav" href="index.php">Home Page</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.php">About Us</a>
-                    </li>
-                    <li>
-                        <a href="contact.php">Contact</a>
-                    </li>
-                    <li>
-			<a href="registration/registration.php">Register</a>
-                    </li>
-<?php
-
-	session_start();
-	if(!isset($_SESSION['sess_user_id'])){
-		echo "<li><a href=\"login/login.html\">Login</a></li>";
-	}
-?>
-                </ul>
-            </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->

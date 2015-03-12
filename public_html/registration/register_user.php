@@ -1,41 +1,12 @@
-<!DOCTYPE html>
 
-<html lang="en">
+<?php 
+	require '../shared/header-tier1-signin.php';
+?>
+<body>
 
-	<head>
-
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
-
-		<title>Registration</title>
-
-		<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- Bootstrap Core CSS -->
-    		<link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    		<!-- Custom styles for this template -->
-    		<link href="../css/signin.css" rel="stylesheet">
-
-    		<!-- Custom CSS -->
-    		<link href="../css/one-page-wonder.css" rel="stylesheet">
-
-		<script type="text/javascript" src="../checkPasswords.js"></script>
-
-		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-	</head>
-
-	<body>
+<?php 
+	require '../shared/nav-simple-tier1.php';
+?>
 
 <?php
 
@@ -84,11 +55,11 @@
 
 							<h2>Thank you for registering.</h2>
 
-							<h2><a href="questionnaire.html">Complete the questionnaire.</a></h2>
+							<h2><a href="questionnaire.php">Complete the questionnaire.</a></h2>
 
 							<p>You have the option to complete it at a later time, but you will not be able to complete in Auditory Training until it is completed.</p>
 
-							<a href="../index.html">Click here to return to the homepage.</a>
+							<a href="../index.php">Click here to return to the homepage.</a>
 
 						</center>
 
