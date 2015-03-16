@@ -104,20 +104,115 @@
 <?php 
 	require '../shared/nav-simple-tier1.php';
 ?>
-		<ul>
+	<div class="container">
+		<div class="row text-center" style="margin-top: 30px;">
+			<h2><em>listen carefully...</em></h2>
+		</div>
+		<div class="row text-center" style="margin-top: 30px;">
 <?php
 	shuffle($sounds);
-	foreach ($sounds as $sound) {
-		echo "\t\t\t<button class=\"btn btn-large\" type=\"button\" id=\"" . $sound['id'] . "\">" . $sound['name'] . "</button>\n";
-	}
 ?>
-
-		</ul>
-
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[0]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[0]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[1]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[1]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[2]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[2]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[3]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[3]['name'] . "</button>\n";
+?>
+			</div>
+		</div>
+		<div class="row text-center" style="margin-top: 20px;">
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[4]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[4]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[5]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[5]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[6]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[6]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[7]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[7]['name'] . "</button>\n";
+?>
+			</div>
+		</div>
+		<div class="row text-center" style="margin-top: 20px;">
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[8]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[8]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[9]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[9]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[10]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[10]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[11]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[11]['name'] . "</button>\n";
+?>
+			</div>
+		</div>
+		<div class="row text-center" style="margin-top: 20px;">
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[12]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[12]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[13]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[13]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[14]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[14]['name'] . "</button>\n";
+?>
+			</div>
+			<div class="col-md-3">
+<?php
+	echo "\t\t\t<button class=\"btn btn-lg active\" type=\"button\" id=\"" . $sounds[15]['id'] . "\" style=\"width: 98%;font-size:20px; line-height: 24px;\">" . $sounds[15]['name'] . "</button>\n";
+?>
+			</div>
+		</div>
+		<hr>
+		<div class="row" style="margin-top: 30px;">
+			<div class="col-md-3 text-center">
+				<a class="btn btn-lg btn-primary" style="padding: 10px 40px; font-size: 20px; width: 90%;" href="index.php">Play Sound Again</a>
+			</div>
+			<div class="col-md-3 col-md-offset-6 text-center">
+				<a class="btn btn-lg btn-primary" style="padding: 10px 40px; font-size: 20px; width: 90%;" href="index.php">Restart Training</a>
+			</div>
+		</div>
 
 <?php
 	require '../shared/footer.php';
 ?>
+	</div>
 
 
     <!-- jQuery -->
