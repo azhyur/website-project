@@ -53,12 +53,6 @@ video {
     margin-top: 8px;
 }
 
-.current a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #eee
-}
-
 audio:not([controls]) {
     display: none;
     height: 0
@@ -5814,7 +5808,7 @@ a.badge:hover {
     padding: 30px 15px;
     margin-bottom: 30px;
     color: inherit;
-    background-color: #eee
+    background-color: white
 }
 
 .jumbotron .h1,
