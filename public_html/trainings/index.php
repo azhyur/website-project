@@ -140,7 +140,6 @@
 		var audioElement = document.createElement('audio');
 		audioElement.setAttribute('src', sounds[0].fileName);
 		audioElement.setAttribute('autoplay', false); 
-		audioElement.setAttribute('volume', "0.1"); 
 		audioElement.addEventListener("load", function() { audioElement.play(); }, true);
 		var seae = setInterval(function(){ audioElement.play();}, 10000);
 

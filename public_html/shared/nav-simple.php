@@ -10,7 +10,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="index.php">Home Page</a>
+                <div>
+                    <img id="logo" src="img/rush_logo32x32.png"/>
+                    <a class="navbar-brand topnav" href="index.php">Home</a>
+                </div>  
             </div>
             <!-- /.navbar-collapse -->
         </div>

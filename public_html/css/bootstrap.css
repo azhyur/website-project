@@ -35,6 +35,15 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
+
+#logo {
+    float: left;
+    color: black;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
 audio:not([controls]) {
   display: none;
   height: 0;
