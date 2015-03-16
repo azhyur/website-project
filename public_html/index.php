@@ -1,10 +1,11 @@
 
-<?php 
+<?php
 	require 'shared/header.php';
 ?>
 <body>
 
-<?php 
+<?php
+    $current = 'home';
 	require 'shared/nav.php';
 ?>
 
@@ -12,11 +13,11 @@
     <header class="header-image">
         <div class="headline">
             <div class="container">
-        		<div class="row">
-        		    <div class="col-sm-12" style="background-color: white; border-style: solid; border-color: #9aedb5; border-width: 15px; margin-bottom: 50px">
-                                <h1>Auditory Training</h1>
+		<div class="row">
+		    <div class="col-sm-12" style="background-color: white; border-style: solid; border-color: #9aedb5; border-width: 15px; margin-bottom: 50px">
+                        <h1>Auditory Training</h1>
                     </div>
-        		</div>
+		</div>
                 <div class="row">
                     <div class="col-sm-12">
                         <img src="img/rush-logo-big.jpg"/>
@@ -66,12 +67,13 @@
         <hr class="featurette-divider">
 
 
+<?php
+	require 'shared/footer.php';
+?>
+
     </div>
     <!-- /.container -->
 
-<?php 
-	require 'shared/footer.php';
-?>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
