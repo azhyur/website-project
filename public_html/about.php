@@ -4,6 +4,10 @@
 
 <body>
 
+<?php
+    $current = 'about';
+?>
+
 <?php 
 	require 'shared/nav.php';
 ?>

@@ -12,7 +12,7 @@
                 </button>
                 <div>
                     <img id="logo" src="/img/rush_logo32x32.png"/>
-                    <a class="navbar-brand topnav" href="index.php">Home</a>
+                    <a class="navbar-brand topnav" href="/index.php">Home</a>
                 </div>  
             </div>
             <!-- /.navbar-collapse -->

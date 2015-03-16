@@ -5,6 +5,7 @@
 <body>
 
 <?php 
+    $current = 'home';
 	require 'shared/nav.php';
 ?>
 
