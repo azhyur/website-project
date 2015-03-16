@@ -12,11 +12,11 @@
     <header class="header-image">
         <div class="headline">
             <div class="container">
-		<div class="row">
-		    <div class="col-sm-12" style="background-color: white; border-style: solid; border-color: #9aedb5; border-width: 15px; margin-bottom: 50px">
-                        <h1>Auditory Training</h1>
+        		<div class="row">
+        		    <div class="col-sm-12" style="background-color: white; border-style: solid; border-color: #9aedb5; border-width: 15px; margin-bottom: 50px">
+                                <h1>Auditory Training</h1>
                     </div>
-		</div>
+        		</div>
                 <div class="row">
                     <div class="col-sm-12">
                         <img src="img/rush-logo-big.jpg"/>
