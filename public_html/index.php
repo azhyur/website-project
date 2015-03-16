@@ -1,15 +1,11 @@
 
-<?php 
+<?php
 	require 'shared/header.php';
 ?>
 <body>
 
-<?php 
-<<<<<<< HEAD
-	$current = 'home';
-=======
+<?php
     $current = 'home';
->>>>>>> 189bb2ffd5fb666163aba2920698a9b701a87814
 	require 'shared/nav.php';
 ?>
 
@@ -71,7 +67,7 @@
         <hr class="featurette-divider">
 
 
-<?php 
+<?php
 	require 'shared/footer.php';
 ?>
 

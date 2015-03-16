@@ -11,15 +11,12 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div>
-<<<<<<< HEAD
                     <img id="logo" src="../img/rush_logo32x32.png"/>
                     <a class="navbar-brand topnav" href="../index.php">Home</a>
-                </div> 
-=======
+                </div>
                     <img id="logo" src="/img/rush_logo32x32.png"/>
                     <a class="navbar-brand topnav" href="/index.php">Home</a>
-                </div>  
->>>>>>> 189bb2ffd5fb666163aba2920698a9b701a87814
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
