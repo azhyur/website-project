@@ -102,7 +102,7 @@
 ?>
 	<body>
 <?php 
-	require '../shared/nav.php';
+	require '../shared/nav-simple-tier1.php';
 ?>
 		<ul>
 <?php

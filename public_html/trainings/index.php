@@ -3,7 +3,7 @@
 ?>
 	<body>
 <?php 
-	require '../shared/nav.php';
+	require '../shared/nav-simple-tier1.php';
 ?>
 	<div class="container">
 		<div class="row" style="padding-top: 100px; padding-bottom:100px;">
