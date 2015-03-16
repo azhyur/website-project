@@ -24,13 +24,11 @@
                     <li>
                         <a href="contact.php">Contact</a>
                     </li>
-                    <li>
-			<a href="registration/registration.php">Register</a>
-                    </li>
 <?php
 
 	session_start();
 	if(!isset($_SESSION['sess_user_id'])){
+		echo "<li><a href=\"registration/registration.php\">Register</a></li>";
 		echo "<li><a href=\"login/login.html\">Login</a></li>";
 	}
 ?>
