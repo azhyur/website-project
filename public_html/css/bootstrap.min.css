@@ -39,6 +39,12 @@ video {
     vertical-align: baseline
 }
 
+.current a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #eee
+}
+
 #logo {
     float: left;
     color: black;
@@ -5020,6 +5026,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-brand>img {
     display: block
 }
+
 
 @media (min-width: 768px) {
     .navbar>.container .navbar-brand,
