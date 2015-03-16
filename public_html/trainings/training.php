@@ -101,7 +101,7 @@
 	);
 ?>
 	<body>
-<?php 
+<?php
 	require '../shared/nav-simple-tier1.php';
 ?>
 	<div class="container">
@@ -209,6 +209,8 @@
 			</div>
 		</div>
 
+		<hr class="featurette-divider">
+
 <?php
 	require '../shared/footer.php';
 ?>
@@ -237,12 +239,12 @@
     $(document).ready(function() {
 		var audioElement = document.createElement('audio');
 		audioElement.setAttribute('src', sounds[0].fileName);
-		audioElement.setAttribute('autoplay', false); 
+		audioElement.setAttribute('autoplay', false);
 		audioElement.addEventListener("load", function() { audioElement.play(); }, true);
 		var seae = setInterval(function(){ audioElement.play();}, 10000);
 
 		$("#" + sounds[0].id).click(function() {clearInterval(seae);});
     });
-</script> 
+</script>
 	</body>
 </html>

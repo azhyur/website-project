@@ -20,6 +20,8 @@
 
 	    </form>
 
+	    <h2 align="center"><a href="../trainings/index.php">Training Page</a></h2>
+
 	</div>
 
 	<hr class="featurette-divider" style="border-color: black;">
