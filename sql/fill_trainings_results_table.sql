@@ -1,0 +1,9 @@
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (1, 2, 1, 4, 4, '2015-04-01', '2015-04-01');
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (2, 3, 1, 4, 3, '2015-04-01', '2015-04-01');
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (3, 4, 1, 4, 1, '2015-04-01', '2015-04-01');
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (4, 2, 1, 4, 2, '2015-04-01', '2015-04-01');
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (5, 3, 1, 4, 1, '2015-04-01', '2015-04-01');
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (6, 4, 1, 4, 2, '2015-04-01', '2015-04-01');
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (7, 2, 2, 4, 3, '2015-04-01', '2015-04-01');
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (8, 3, 2, 4, 4, '2015-04-01', '2015-04-01');
+INSERT INTO training_results(id, user_id, training_id, answered_count, correct_count, start_datetime, finish_datetime) VALUES (9, 4, 2, 4, 2, '2015-04-01', '2015-04-01');
