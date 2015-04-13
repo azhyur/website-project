@@ -41,7 +41,7 @@
 				<a class="btn btn-lg btn-primary" style="padding: 10px 40px; font-size: 20px; width: 90%;" href="index.php">Play Sound Again</a>
 			</div>
 			<div class="col-md-3 col-md-offset-6 text-center">
-            <a class="btn btn-lg btn-primary" style="padding: 10px 40px; font-size: 20px; width: 90%;" href="start.php?i=<?php echo $trainingId; ?>">Restart Training</a>
+            <a class="btn btn-lg btn-primary" style="padding: 10px 40px; font-size: 20px; width: 90%;" href="start.php?t=<?php echo $trainingId; ?>">Restart Training</a>
 			</div>
 		</div>
 

@@ -29,7 +29,7 @@
 				<p>When you hear the sound, press the cooresponding button.</P>
 			</div>
 			<div class="col-md-2 col-md-offset-5 text-center" style="margin-top: 10px;">
-				<a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="training.php">Start</a>
+            <a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="training.php?t=<?php echo $trainingId; ?>">Start</a>
 			</div>
 		</div>
 		<hr>
