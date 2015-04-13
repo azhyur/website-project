@@ -16,9 +16,14 @@
 
 	<div class="jumbotron">
         <h1>Overview</h1>
-        <p class="lead">The Auditory Research Laboratory (ARL) is a dedicated research facility of the Department of Communication Disorders and Sciences at Rush University Medical Center. The mission of the ARL is twofold; It is the advancement of knowledge on theoretical and applied aspects of auditory perception and cognition in normal-hearing and hearing impaired populations and it is in training of future professionals in the field of communication disorders and sciences in the development and conduct of experimental research. </p>
+        <p class="lead">The mission of the ARL is twofold
+        <ul>
+          <li>Advancement of auditory perception and cognition in normal-hearing and hearing impaired populations</li>
+          <li>Training of future professionals in the field of communication disorders and experimental research</li>
+        <ul>
+        </p>
         <p><a class="btn btn-lg btn-success" href="registration/registration.php" role="button">Sign up today</a></p>
-      	</div>
+        </div>
 
       <div class="row marketing">
         <div class="col-lg-6">
