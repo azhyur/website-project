@@ -32,19 +32,19 @@
 
         <hr class="featurette-divider">
 
-        <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="img/Shafiro.gif">
-            <h2 class="featurette-heading">Mission Statement
-                <span class="text-muted">Summary</span>
-            </h2>
-            <p class="lead">Professor Valeriy Shafiro at Rush University in the department of Communication Disorders specializes in working with audiology and speech perception. 
-                <p class="lead">Previous work from Professor Shafiro and team has shown clear benefits of home-based computerized auditory training for users of cochlear implants (implantable electronic devices that stimulate the auditory nerve bypassing normal hearing mechanisms).</p>
-                <p class="lead">To provide greater access to these training methods and allow more rigorous testing we would like to implement the testing and training protocols online. </p>
-            </p>
-        </div>
+<!--         First Featurette
+<div class="featurette" id="about">
+    <img class="featurette-image img-circle img-responsive pull-right" src="img/Shafiro.gif">
+    <h2 class="featurette-heading">Mission Statement
+        <span class="text-muted">Summary</span>
+    </h2>
+    <p class="lead">Professor Valeriy Shafiro at Rush University in the department of Communication Disorders specializes in working with audiology and speech perception. 
+        <p class="lead">Previous work from Professor Shafiro and team has shown clear benefits of home-based computerized auditory training for users of cochlear implants (implantable electronic devices that stimulate the auditory nerve bypassing normal hearing mechanisms).</p>
+        <p class="lead">To provide greater access to these training methods and allow more rigorous testing we would like to implement the testing and training protocols online. </p>
+    </p>
+</div>
 
-        <hr class="featurette-divider">
+<hr class="featurette-divider"> -->
 
         <!-- Second Featurette -->
         <div class="featurette" id="services">

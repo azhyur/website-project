@@ -71,7 +71,7 @@ dfn {
 }
 h1 {
   margin: .67em 0;
-  font-size: 2em;
+  font-size: 0em;
 }
 mark {
   color: #000;
@@ -1263,7 +1263,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 18px;
 }
 h2,
 .h2 {
@@ -4882,7 +4882,7 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 52px;
   }
 }
 .thumbnail {
