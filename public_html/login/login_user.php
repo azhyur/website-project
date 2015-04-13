@@ -38,7 +38,11 @@
 				$_SESSION['sess_user_id'] = $row['id'];
 				$_SESSION['sess_username'] = $row['username'];
 				session_write_close();
-				header('Location: ../index.php');
+                if(is_null($row['age'])) {
+                    header('Location: ../registration/questionaire.php');
+                } else {
+                    header('Location: ../index.php');
+                }
 				die("Login successful");
 			}
 			else{

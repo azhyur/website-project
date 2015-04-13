@@ -81,6 +81,12 @@
 					</div>
 
 				</body>';
+
+
+	$userResult = mysqli_query($con, "SELECT * FROM users WHERE username = '" . $userName . "'");
+
+	$row = mysqli_fetch_array($userResult);
+
 		session_regenerate_id();
 		$_SESSION['sess_user_id'] = $row['id'];
 		$_SESSION['sess_username'] = $row['username'];
