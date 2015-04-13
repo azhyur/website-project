@@ -38,8 +38,8 @@
 				$_SESSION['sess_user_id'] = $row['id'];
 				$_SESSION['sess_username'] = $row['username'];
 				session_write_close();
-                if(is_null($row['age'])) {
-                    header('Location: ../registration/questionaire.php');
+                if(is_null($row['device'])) {
+                    header('Location: ../registration/questionnaire.php');
                 } else {
                     header('Location: ../index.php');
                 }
