@@ -7,14 +7,25 @@
 ?>
 	<div class="container">
 		<div class="row" style="padding-top: 100px; padding-bottom:100px;">
-			<div class="col-md-6 col-md-offset-3 text-center">
-				<h1>Welcome to your training!</h1>
-				<br>
-				<p>In this training you will be asked to identify a series of random sounds.</p>
-				<p>When you hear the sound, press the cooresponding button.</P>
-			</div>
-			<div class="col-md-2 col-md-offset-5 text-center" style="margin-top: 10px;">
-				<a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="training.php">Start</a>
+			<div class="col-md-6 col-md-offset-3">
+				<h1>Please select a training</h1>
+                    <ul>
+<?php
+    
+	$con = mysqli_connect("localhost", "root", "", "auditory_training");
+
+	if (mysqli_connect_errno()) {
+                 echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        }
+
+	$result = mysqli_query($con, "SELECT * FROM trainings");
+
+	while($row = mysqli_fetch_array($result)){
+        echo "<li><a href=\"start.php?t=" . $row['id'] . "\">" . $row['name'] . "</a></li>";
+	}
+    
+?>
+                    </ul>
 			</div>
 		</div>
 		<hr>

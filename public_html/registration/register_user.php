@@ -10,7 +10,7 @@
 
 <?php
 
-	$con = mysqli_connect("ecurri3.mysql.uic.edu", "ecurri3-rw", "Forget1900!", "ecurri3");
+	$con = mysqli_connect("localhost", "root", "", "auditory_training");
 
 	if (mysqli_connect_errno()) {
  		 echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -57,7 +57,7 @@
 	    exit();
 	}
 
-        $sql="INSERT INTO auditory_users (firstname, lastname, username, password, email, age, language) VALUES ('$firstName', '$lastName', '$userName', '$password', '$email', '$age', '$language')";
+        $sql="INSERT INTO users (firstname, lastname, username, password, email, role, age, language) VALUES ('$firstName', '$lastName', '$userName', '$password', '$email', 'client', '$age', '$language')";
 
         if(!mysqli_query($con, $sql)){
         	die('Error: ' . mysqli_error($con));

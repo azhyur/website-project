@@ -5,7 +5,7 @@
 <body>
 
 <?php 
-	require '../shared/nav-simple-tier1.php';
+	require 'nav.php';
 ?>
 
 <?php
@@ -27,18 +27,18 @@
         }
 
 	$username = mysqli_real_escape_string($con, $_POST['username']);
-        $password = mysqli_real_escape_string($con, $_POST['password']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
 
 	$result = mysqli_query($con, "SELECT * FROM users");
 
 	while($row = mysqli_fetch_array($result)){
-		if(strtoupper($username) == strtoupper( $row['username'])){
+		if(strtoupper($username) == strtoupper( $row['username']) && $row['role'] == 'admin'){
 			if($password == $row['password']){
 				session_regenerate_id();
 				$_SESSION['sess_user_id'] = $row['id'];
 				$_SESSION['sess_username'] = $row['username'];
 				session_write_close();
-				header('Location: ../index.php');
+				header('Location: ../admin/index.php');
 				die("Login successful");
 			}
 			else{

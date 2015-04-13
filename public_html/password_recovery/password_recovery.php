@@ -32,7 +32,7 @@
         </head>
 
 			<?php
-					$con = mysqli_connect("ecurri3.mysql.uic.edu", "ecurri3-rw", "Forget1900!", "ecurri3");
+					$con = mysqli_connect("localhost", "root", "", "auditory_training");
 
 					if (mysqli_connect_errno()) {
 							 echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -41,7 +41,7 @@
 					$username = mysqli_real_escape_string($con, $_POST['username']);
 					$email = mysqli_real_escape_string($con, $_POST['email']);
 
-					$result = mysqli_query($con, "SELECT * FROM auditory_users");
+					$result = mysqli_query($con, "SELECT * FROM users");
 
 					while($row = mysqli_fetch_array($result)){
 							if(strtoupper($username) == strtoupper( $row['username'])){
