@@ -28,6 +28,7 @@
 		echo "<li><a href=\"login/login.php\">Login</a></li>";
 	}
 	else{
+		echo "<li><a href=\"trainings/\">Trainings</a></li>";
 		echo "<li><a href=\"profile/profile.php\">Profile</a></li>";
 	}
 ?>
