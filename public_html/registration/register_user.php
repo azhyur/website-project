@@ -27,18 +27,33 @@
     	$password = mysqli_real_escape_string($con, $_POST['password']);
 	$con_password = mysqli_real_escape_string($con, $_POST['con_password']);
 
+	//Age not selected
 	if($age == 0){
 	    header("location: registration-error-age-null.php");
 	    exit();
 	}
 
+	//Too young
 	if($age < 18){
 	    header("location: registration-error-age-18.php");
 	    exit();
 	}
 
+	//Passwords do not match
 	if(strcmp($_POST['password'], $_POST['con_password']) != 0){
 	    header("location: registration-error-password.php");
+	    exit();
+	}
+
+	//Password length too short
+	if(strlen($password) < 8){
+	    header("location: registration-error-password-length.php");
+	    exit();
+	}
+
+	//If space is found
+	if (preg_match('/ /', $string)){
+    	    header("location: registration-error-password-invalid.php");
 	    exit();
 	}
 

@@ -20,6 +20,8 @@
     <!-- Custom CSS -->
     <link href="../css/one-page-wonder.css" rel="stylesheet">
 
+    <script src="../js/checkPasswords.js" type="text/javascript"></script>
+
     <link rel="shortcut icon" href="../img/rush_logo.ico">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

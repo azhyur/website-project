@@ -20,9 +20,42 @@
 			<div class="row">
 			    <div class="col-lg-8">
 
-				<p>What is the answer to the first question?</p>
-				<input type="radio" name="q1" value="a1">Answer 1<br>
-				<input type="radio" name="q1" value="a2">Answer 2<br>
+				<p>Are you male or female?</p>
+				<input type="radio" name="q1" value="male">Male<br>
+				<input type="radio" name="q1" value="female">Female<br>
+
+			    </div>
+			</div>
+
+			<div class="row">
+			    <div class="col-lg-8">
+
+				<p>Do you use a hearing aid or a cochlear implant?</p>
+				<input type="radio" name="q2" value="hearing_aid">Hearing Aid<br>
+				<input type="radio" name="q2" value="cochlear_implant">Cochlear Implant<br>
+
+			    </div>
+			</div>
+
+			<div class="row">
+			    <div class="col-lg-8">
+
+				<p>How long have you had a problem with your hearing?</p>
+				<input type="radio" name="q3" value="1-">Less than 1 year<br>
+				<input type="radio" name="q3" value="1_5">1-5 years<br>
+				<input type="radio" name="q3" value="5_10">5-10 years<br>
+				<input type="radio" name="q3" value="10_15">10-15 years<br>
+				<input type="radio" name="q3" value="15+">Longer than 15 years<br>
+
+			    </div>
+			</div>
+
+			<div class="row">
+			    <div class="col-lg-8">
+
+				<p>Have you ever participated in auditory training before?</p>
+				<input type="radio" name="q4" value="yes">Yes<br>
+				<input type="radio" name="q4" value="no">No<br>
 
 			    </div>
 			</div>

@@ -68,6 +68,7 @@
 										mysqli_close($con);
 										exit();
 									}
+									//Incorrect email with given username
 									else{
 										header("location: password_recovery_form-error-email.html");
 										mysqli_close($con);
@@ -76,6 +77,7 @@
 							}
 					}
 
+					//Username not found
 					header("location: password_recovery_form-error-username.html");
 					mysqli_close($con);
 

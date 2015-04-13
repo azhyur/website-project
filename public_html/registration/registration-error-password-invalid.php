@@ -8,13 +8,24 @@
 	require '../shared/nav-simple-tier1.php';
 ?>
 
+    <!-- Page Content -->
     <div class="container">
 
 	<div class="container">
 
       		<form class="form-signin" action="register_user.php" method="post">
 
-      			<h1 class="form-signin-heading" align="center">User Registration</h1>
+      			<h2 class="form-signin-heading" align="center">User Registration</h2>
+
+			<div class="alert alert-danger" role="alert">
+
+			    <center>
+
+			    <strong>Your password contained invalid characters.</strong>
+
+			    </center>
+
+			</div>
 
 				<input type="text" name="firstname" class="form-control" placeholder="First Name" required autofocus>
 				<input type="text" name="lastname" class="form-control" placeholder="Last Name" required>
@@ -72,8 +83,6 @@
 
 				<input type="password" name="con_password" id="con_password" onkeyup="checkPasswords(); return false;" class="form-control" placeholder="Confirm Password" required>
 
-				<span id="spanPassword"></span><br/>
-
 				<span id="confirmMessage" class="confirmMessage" style="display: block; margin: 0px auto; text-align: center;font-size: 16px;"></span>
 
 				<br>
@@ -89,8 +98,9 @@
 <?php 
 	require '../shared/footer.php';
 ?>
-    
+
     </div>
+    <!-- /.container -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
