@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div>
-                    <img id="logo" src="img/rush_logo32x32.png"/>
+                    <a href="index.php"><img id="logo" src="img/rush_logo32x32.png"/></a>
                     <a class="navbar-brand topnav" href="index.php">Home</a>
                 </div> 
             </div>

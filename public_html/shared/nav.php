@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div>
-                    <img id="logo" src="img/rush_logo32x32.png"/>
+                    <a href="index.php"><img id="logo" src="img/rush_logo32x32.png" a href="../index.php"/></a>
                     <a class="navbar-brand topnav" href="index.php">Home</a>
                 </div>
             </div>
@@ -23,14 +23,14 @@
                     <li <?php if($current == 'registration') echo 'class="current"'; ?>><a href="registration/registration.php">Register</a></li>
 <?php
 
-	session_start();
-	if(!isset($_SESSION['sess_user_id'])){
-		echo "<li><a href=\"login/login.php\">Login</a></li>";
-	}
-	else{
-		echo "<li><a href=\"trainings/\">Trainings</a></li>";
-		echo "<li><a href=\"profile/profile.php\">Profile</a></li>";
-	}
+    session_start();
+    if(!isset($_SESSION['sess_user_id'])){
+        echo "<li><a href=\"login/login.php\">Login</a></li>";
+    }
+    else{
+        echo "<li><a href=\"trainings/\">Trainings</a></li>";
+        echo "<li><a href=\"profile/profile.php\">Profile</a></li>";
+    }
 ?>
                 </ul>
             </div>

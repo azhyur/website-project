@@ -1,28 +1,28 @@
 
 <?php
-	require 'shared/header.php';
+    require 'shared/header.php';
 ?>
 <body>
 
 <?php
     $current = 'home';
-	require 'shared/nav.php';
+    require 'shared/nav.php';
 ?>
 
     <!-- Full Width Image Header -->
     <header class="header-image">
         <div class="headline">
             <div class="container">
-		<div class="row">
-		    <div class="col-sm-12" style="background-color: white; border-style: solid; border-color: #9aedb5; border-width: 15px; margin-bottom: 50px">
-                        <h1>Auditory Training</h1>
-                    </div>
-		</div>
+            <div class="row">
+            <div class="col-sm-12" style="background-color: white;">
+                <h1>Auditory Training</h1>
                 <div class="row">
-                    <div class="col-sm-12">
-                        <img src="img/rush-logo-big.jpg"/>
-                    </div>
+                <div class="col-sm-12">
+                    <img src="img/rush-logo-med.jpg"/>
                 </div>
+                </div>
+            </div>
+            </div>
             </div>
         </div>
     </header>
@@ -30,9 +30,9 @@
     <!-- Page Content -->
     <div class="container">
 
-        <hr class="featurette-divider">
+<!--        <hr class="featurette-divider">
 
-<!--         First Featurette
+         First Featurette
 <div class="featurette" id="about">
     <img class="featurette-image img-circle img-responsive pull-right" src="img/Shafiro.gif">
     <h2 class="featurette-heading">Mission Statement
@@ -51,25 +51,26 @@
             <img class="featurette-image img-circle img-responsive pull-left" src="img/ear.png">
             <h2 class="featurette-heading">Improve
                 <span class="text-muted">sound perception.</span>
+            
+                <img class="featurette-image img-circle img-responsive pull-right" src="img/bulb.gif">
+             <span class="featurette-heading" style="float:right">Gain confidence 
+                <span class="text-muted">in recognition.</span>
             </h2>
         </div>
 
-        <hr class="featurette-divider">
+        <!-- <hr class="featurette-divider"> -->
 
         <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="img/bulb.gif">
-            <h2 class="featurette-heading">Gain confidence
-                <span class="text-muted">in recognizing sounds.</span>
-            </h2>
-<!--             <p class="lead">PLACEHOLDER: If readers have made it this far, then they must be interested. We can use this last spot to explain what to do next in order to participate in auditory training.</p> -->
-        </div>
+        <!-- <div class="featurette" id="contact"> -->
 
-        <hr class="featurette-divider">
+<!--             <p class="lead">PLACEHOLDER: If readers have made it this far, then they must be interested. We can use this last spot to explain what to do next in order to participate in auditory training.</p> -->
+        <!-- </div> -->
+
+        <!-- <hr class="featurette-divider"> -->
 
 
 <?php
-	require 'shared/footer.php';
+    require 'shared/footer.php';
 ?>
 
     </div>
