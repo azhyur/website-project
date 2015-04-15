@@ -14,7 +14,7 @@
 
       		<form class="form-signin" action="register_user.php" method="post">
 
-      			<h1 class="form-signin-heading" align="center">User Registration</h1>
+      			<h1 class="form-signin-heading" align="center">Create Account</h1>
 
 				<input type="text" name="firstname" class="form-control" placeholder="First Name" required autofocus>
 				<input type="text" name="lastname" class="form-control" placeholder="Last Name" required>
