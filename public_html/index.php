@@ -66,7 +66,7 @@
 <!--             <p class="lead">PLACEHOLDER: If readers have made it this far, then they must be interested. We can use this last spot to explain what to do next in order to participate in auditory training.</p> -->
         <!-- </div> -->
 
-        <!-- <hr class="featurette-divider"> -->
+      <hr class="featurette-divider" style="border-color: black">
 
 
 <?php
