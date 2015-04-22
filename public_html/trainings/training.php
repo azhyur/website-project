@@ -1,25 +1,20 @@
 <?php
+    require '../../config/database.php';
+    $dbCon = new dbController();
 	require '../shared/header-tier1.php';
     $trainingId = $_GET["t"];
 
-	$con = mysqli_connect("localhost", "root", "", "auditory_training");
+    $trainings = $dbCon->executeSelect("SELECT * FROM trainings WHERE id = " . $trainingId);
+    $sounds = $dbCon->executeSelect( 
+        "SELECT * 
+        FROM trainings_sounds 
+        LEFT JOIN sounds ON (trainings_sounds.sound_id = sounds.id) 
+        WHERE training_id = " . $trainingId . " 
+        ORDER BY sounds.name ASC");
 
-	if (mysqli_connect_errno()) {
-                 echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        }
+    echo "<body>";
+    require '../shared/nav-simple-tier1.php';
 
-
-	$result = mysqli_query($con, "SELECT * FROM trainings_sounds LEFT JOIN sounds ON (trainings_sounds.sound_id = sounds.id) WHERE training_id = " . $trainingId . " ORDER BY sounds.name ASC");
-    $sounds = array();
-    while($row = mysqli_fetch_array($result)) {
-        $sounds[] = $row;
-    }
-
-// ../..audiofiles/
-?>
-	<body>
-<?php 
-	require '../shared/nav-simple-tier1.php';
 ?>
 	<div class="container">
 		<div class="row text-center" style="margin-top: 30px;">

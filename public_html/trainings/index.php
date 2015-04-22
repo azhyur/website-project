@@ -1,9 +1,9 @@
 <?php
     require '../../config/database.php';
+    $dbCon = new dbController();
 	require '../shared/header-tier1.php';
 	echo "<body>";
 	require '../shared/nav-simple-tier1.php';
-    $dbCon = new dbController();
 ?>
 	<div class="container">
 		<div class="row" style="padding-top: 100px; padding-bottom:100px;">
