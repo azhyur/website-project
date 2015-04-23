@@ -1,56 +1,53 @@
 <?php 
+    // verify admin
     require 'verify_user.php';
-
     if(!AdminVerify::isAdmin()) {
         header("location: login.php");
         exit();
     }
-?>
-<?php
-	require '../shared/header-tier1.php';
-?>
-<body>
 
-<?php
     $current = 'home';
-	require 'nav.php';
+
+    require '../shared/header-tier1.php';
+    echo "<body>";
+    require 'nav.php';
 ?>
-
-
 
     <div class="container">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Language</th>
-            </tr>
-            </thead>
-            <tbody>
+        <div class="row">
+            <h2>Search Users</h2>
+            <form id="searchForm" class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" class="form-control" placeholder="John">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" class="form-control" placeholder="Doe">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>Search Results</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Language</th>
+                    </tr>
+                </thead>
+                <tbody id="searchResults">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 <?php
-
-            $con = mysqli_connect("localhost", "root", "", "auditory_training");
-
-            if (mysqli_connect_errno()) {
-                echo "Failed to connect to MySQL: " . mysqli_connect_error();
-            }
-
-            $result = mysqli_query($con, "SELECT * FROM users WHERE role = 'client'");
-
-	        while($row = mysqli_fetch_array($result)){
-                echo "<tr><td>" . $row['firstname'] . "</td><td>" . $row['lastname'] . "</td><td><a href=\"users.php?id=" . $row['id'] . "\">" . $row['email'] . "</a></td><td>" . $row['language'] . "</td></tr>";
-            }
-
-?>
-            <tbody>
-        </table>
-</div>
-
-
-<?php
-	require '../shared/footer.php';
+    require '../shared/footer.php';
 ?>
 
     </div>
@@ -61,6 +58,31 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+    <script>
+
+    $("#searchForm").submit(function(event) {
+        // prevent default form post
+        event.preventDefault();
+
+        // get form data
+        var $form = $(this);
+        var firstName = $form.find("input[name='first-name']").val();
+        var lastName = $form.find("input[name='last-name']").val();
+        var url = "user_lookup.php";
+
+        // post the data
+        var posting = $.post(url,{first_name : firstName, last_name : lastName});
+
+        // display the results
+        posting.done(function(data) {
+
+            var content = $(data);
+            $("#searchResults").empty().append(content);
+        });
+    
+    });
+
+    </script>
 
 </body>
 
