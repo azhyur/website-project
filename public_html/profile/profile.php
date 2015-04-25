@@ -14,8 +14,6 @@
 
 	    <form class="form-signin" action="logout_user.php" method="post">
 
-		<h2 class="form-signin-heading" align="center">Logout</h2>
-
 	    	<input class="btn btn-lg btn-primary btn-block" type="submit" value="Logout">
 
 	    </form>
