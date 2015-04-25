@@ -13,7 +13,7 @@
 	session_start();
 
 	if(!isset($_SESSION['sess_user_id'])){
-		header("location: ../index.php");
+		header("location: ../../index.php");
 		exit();
 	}
 
@@ -40,25 +40,7 @@
 		}
 	}
 
-	echo '	<body>
-
-				<div class="container">
-
-					<center>
-
-						<h2>Thank you for completing the questionnaire.</h2>
-
-						<p>By completing the questionnaire, you gain access to testing, training, and other features on the auditory training website.</p>
-
-						<a href="../profile/profile.php">You may now start your auditory training.</a>
-
-						<a href="../index.php">Click here to return to the homepage.</a>
-
-					</center>
-
-				</div>
-
-			</body>';
+	header("location: ../../trainings/index.php");
 	mysqli_close($con);
 
 ?>
