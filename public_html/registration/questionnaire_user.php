@@ -13,7 +13,7 @@
 	session_start();
 
 	if(!isset($_SESSION['sess_user_id'])){
-		header("location: ../../index.php");
+		header("location: ../index.php");
 		exit();
 	}
 
@@ -31,6 +31,8 @@
 	if(strlen($_POST['q1']) < 1 || strlen($_POST['q2']) < 1 || strlen($_POST['q3']) < 1 || strlen($_POST['q4']) < 1)
 		header("location: questionnaire-form.php");
 
+	$result = mysqli_query($con, "SELECT * FROM users");
+
 	while($row = mysqli_fetch_array($result)){
 		if(strtoupper($_SESSION['sess_username']) == strtoupper( $row['username'])){
 			$sql="INSERT INTO users (gender, device, duration, experience) VALUES ('$a1', '$a2', '$a3', '$a4')";
@@ -40,7 +42,7 @@
 		}
 	}
 
-	header("location: ../../trainings/index.php");
+	header("location: ../trainings/index.php");
 	mysqli_close($con);
 
 ?>

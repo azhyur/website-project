@@ -1,35 +1,12 @@
-<!DOCTYPE html>
 
-<html lang="en">
+<?php
+	require '../shared/header-tier1-signin.php';
+?>
+<body>
 
-        <head>
-
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<meta name="description" content="">
-			<meta name="author" content="">
-
-			<title>Password Recovery</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../css/signin.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../css/one-page-wonder.css" rel="stylesheet">
-
-			<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-			<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        	<![endif]-->
-
-        </head>
+<?php
+	require '../shared/nav-simple-tier1.php';
+?>
 
 			<?php
 					$con = mysqli_connect("localhost", "root", "", "auditory_training");
@@ -70,7 +47,7 @@
 									}
 									//Incorrect email with given username
 									else{
-										header("location: password_recovery_form-error-email.html");
+										header("location: password_recovery_form-error-email.php");
 										mysqli_close($con);
 										exit();
 									}
@@ -78,7 +55,19 @@
 					}
 
 					//Username not found
-					header("location: password_recovery_form-error-username.html");
+					header("location: password_recovery_form-error-username.php");
 					mysqli_close($con);
 
 			?>
+
+	<hr class="featurette-divider" style="border-color: black">
+
+<?php
+	require '../shared/footer.php';
+?>
+
+    </div>
+
+	</body>
+
+</html>
