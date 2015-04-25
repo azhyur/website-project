@@ -1,10 +1,10 @@
 
-<?php 
+<?php
 	require '../shared/header-tier1-signin.php';
 ?>
 <body>
 
-<?php 
+<?php
 	require '../shared/nav-simple-tier1.php';
 ?>
 
@@ -26,13 +26,13 @@
                  echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
 
-	$username = mysqli_real_escape_string($con, $_POST['username']);
-        $password = mysqli_real_escape_string($con, $_POST['password']);
+	$email = mysqli_real_escape_string($con, $_POST['email']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
 
 	$result = mysqli_query($con, "SELECT * FROM users");
 
 	while($row = mysqli_fetch_array($result)){
-		if(strtoupper($username) == strtoupper( $row['username'])){
+		if(strtoupper($email) == strtoupper( $row['email'])){
 			if($password == $row['password']){
 				session_regenerate_id();
 				$_SESSION['sess_user_id'] = $row['id'];
@@ -53,7 +53,7 @@
 		}
 	}
 
-	header("location: login-error-username.php");
+	header("location: login-error-email.php");
 
 	mysqli_close($con);
 

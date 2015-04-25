@@ -1,10 +1,10 @@
 
-<?php 
+<?php
 	require '../shared/header-tier1-signin.php';
 ?>
 <body>
 
-<?php 
+<?php
 	require '../shared/nav-simple-tier1.php';
 ?>
 
@@ -26,7 +26,7 @@
 
 				</div>
 
-				<input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+				<input type="text" name="email" class="form-control" placeholder="Email" required autofocus>
 
 				<input type="password" name="password" class="form-control" placeholder="Password" required>
 
@@ -40,12 +40,12 @@
 
 	<hr class="featurette-divider" style="border-color: black">
 
-<?php 
+<?php
 require '../shared/footer.php';
 ?>
 
     </div>
-		
+
 	<!-- jQuery -->
     	<script src="js/jquery.js"></script>
 
