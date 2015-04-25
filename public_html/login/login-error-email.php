@@ -41,7 +41,12 @@
 
 			</form>
 
-			<center> <h3><a href="../password_recovery/password_recovery_form.php">Forgot Password?</a></h3> </center>
+			<div class="row">
+		    	<div class="form-group">
+				<center> <h3><a href="../password_recovery/password_recovery_form.php">Forgot Password?</a></h3> </center>
+				<center> <h3><a href="../registration/registration.php">Not Registered Yet?</a></h3> </center>
+			</div>
+			</div>
 
 		</div>
 
