@@ -10,27 +10,34 @@
 
     <div class="container">
 
+		<h2 class="form-signin-heading" align="center">Login</h2>
+		
+		<center>
+
+		<div class="alert alert-danger" style="width: 50%;" role="alert">
+
+			<strong>Email does not exist.</strong>
+
+		</div>
+
+		</center>
+
 		<div class="container">
 
-			<form class="form-signin" action="login_user.php" method="post">
+			<form class="form-inline" action="login_user.php" method="post" style="text-align:center;">
 
-				<h2 class="form-signin-heading" align="center">Login</h2>
+				<div class="row">
+		    		<div class="form-group">
 
-				<div class="alert alert-danger" role="alert">
+					<input type="text" name="email" class="form-control" placeholder="Email" required autofocus>
+					<input type="password" name="password" class="form-control" placeholder="Password" required>
 
-			    	    <center>
+		    		</div>
+		    		</div>
+			
+				<br>
 
-			    	    <strong>Email does not exist.</strong>
-
-			    	    </center>
-
-				</div>
-
-				<input type="text" name="email" class="form-control" placeholder="Email" required autofocus>
-
-				<input type="password" name="password" class="form-control" placeholder="Password" required>
-
-				<input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+				<center><input class="btn btn-lg btn-primary btn-block" style="width:25%;" type="submit" value="Login"></center>
 
 			</form>
 

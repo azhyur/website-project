@@ -12,26 +12,33 @@
 
 
 		<div class="container">
+		
+			<h2 class="form-signin-heading" align="center">Login</h2>
 
-			<form class="form-signin" action="login_user.php" method="post">
+			<center>
 
-				<h2 class="form-signin-heading" align="center">Login</h2>
+			<div class="alert alert-danger" style="width: 50%;" role="alert">
 
-				<div class="alert alert-danger" role="alert">
+			    	<strong>You are already logged in.</strong>
 
-			    	    <center>
+			</div>
 
-			    	    <strong>You are already logged in.</strong>
+			</center>
 
-			    	    </center>
+			<form class="form-inline" action="login_user.php" method="post" style="text-align:center;">
 
-				</div>
+				<div class="row">
+		    		<div class="form-group">
 
-				<input type="text" name="email" class="form-control" placeholder="Email" required autofocus>
+					<input type="text" name="email" class="form-control" placeholder="Email" required autofocus>
+					<input type="password" name="password" class="form-control" placeholder="Password" required>
 
-				<input type="password" name="password" class="form-control" placeholder="Password" required>
+		    		</div>
+		    		</div>
+			
+				<br>
 
-				<input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+				<center><input class="btn btn-lg btn-primary btn-block" style="width:25%;" type="submit" value="Login"></center>
 
 			</form>
 
