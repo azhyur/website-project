@@ -1,14 +1,17 @@
 
-<?php 
+<?php
 	require '../shared/header-tier1-signin.php';
 ?>
 <body>
 
-<?php 
+<?php
 	require '../shared/nav-simple-tier1.php';
 ?>
 
 <?php
+
+	ob_start();
+	session_start();
 
 	$con = mysqli_connect("localhost", "root", "", "auditory_training");
 
