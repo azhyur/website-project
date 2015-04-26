@@ -10,19 +10,19 @@
 
     <div class="container">
 
+		<h2 class="form-signin-heading" align="center">Login</h2>
+		
+		<center>
+
+		<div class="alert alert-danger" style="width: 50%;" role="alert">
+
+			<strong>Email does not exist.</strong>
+
+		</div>
+
+		</center>
+
 		<div class="container">
-
-			<h2 class="form-signin-heading" align="center">Login</h2>
-
-			<center>
-
-			<div class="alert alert-danger" style="width: 50%;" role="alert">
-
-				<strong>Password is incorrect.</strong>
-
-			</div>
-
-			</center>
 
 			<form class="form-inline" action="login_user.php" method="post" style="text-align:center;">
 

@@ -1,14 +1,17 @@
 
-<?php 
+<?php
 	require '../shared/header-tier1-signin.php';
 ?>
 <body>
 
-<?php 
+<?php
 	require '../shared/nav-simple-tier1.php';
 ?>
 
 <?php
+
+	ob_start();
+	session_start();
 
 	$con = mysqli_connect("localhost", "root", "", "auditory_training");
 
@@ -23,8 +26,8 @@
 	$age = (is_numeric($_POST['age']) ? (int)$_POST['age'] : 0);
 	$language = mysqli_real_escape_string($con, $_POST['language']);
 
-    	$userName = mysqli_real_escape_string($con, $_POST['username']);
-    	$password = mysqli_real_escape_string($con, $_POST['password']);
+    $userName = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
 	$con_password = mysqli_real_escape_string($con, $_POST['con_password']);
 
 	//Age not selected
@@ -46,7 +49,7 @@
 	}
 
 	//Password length too short
-	if(strlen($password) < 8){
+	if(strlen($POST_['password']) < 8){
 	    header("location: registration-error-password-length.php");
 	    exit();
 	}
@@ -57,41 +60,43 @@
 	    exit();
 	}
 
-        $sql="INSERT INTO users (firstname, lastname, username, password, email, role, age, language) VALUES ('$firstName', '$lastName', '$userName', '$password', '$email', 'client', '$age', '$language')";
+	$password = md5($password);
 
-        if(!mysqli_query($con, $sql)){
-        	die('Error: ' . mysqli_error($con));
-        }
-        echo '	<body>
+	$sql="INSERT INTO users (firstname, lastname, username, password, email, role, age, language) VALUES ('$firstName', '$lastName', '$userName', '$password', '$email', 'client', '$age', '$language')";
 
-					<div class="container">
+	if(!mysqli_query($con, $sql)){
+		die('Error: ' . mysqli_error($con));
+	}
+	echo '	<body>
 
-						<center>
+				<div class="container">
 
-							<h2>Thank you for registering.</h2>
+					<center>
 
-							<h2><a href="questionnaire.php">Complete the questionnaire.</a></h2>
+						<h2>Thank you for registering.</h2>
 
-							<p>You have the option to complete it at a later time, but you will not be able to complete in Auditory Training until it is completed.</p>
+						<h2><a href="questionnaire.php">Complete the questionnaire.</a></h2>
 
-							<a href="../index.php">Click here to return to the homepage.</a>
+						<p>You have the option to complete it at a later time, but you will not be able to complete in Auditory Training until it is completed.</p>
 
-						</center>
+						<a href="../index.php">Click here to return to the homepage.</a>
 
-					</div>
+					</center>
 
-				</body>';
+				</div>
+
+			</body>';
 
 
 	$userResult = mysqli_query($con, "SELECT * FROM users WHERE username = '" . $userName . "'");
 
 	$row = mysqli_fetch_array($userResult);
 
-		session_regenerate_id();
-		$_SESSION['sess_user_id'] = $row['id'];
-		$_SESSION['sess_username'] = $row['username'];
-		session_write_close();
-		mysqli_close($con);
+	session_regenerate_id();
+	$_SESSION['sess_user_id'] = $row['id'];
+	$_SESSION['sess_username'] = $row['username'];
+	session_write_close();
+	mysqli_close($con);
 
 ?>
 

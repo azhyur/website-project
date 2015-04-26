@@ -1,17 +1,17 @@
 
-<?php 
+<?php
 	require '../shared/header-tier1-signin.php';
 ?>
 <body>
 
-<?php 
+<?php
 	require '../shared/nav-simple-tier1.php';
 ?>
 
     <!-- Page Content -->
     <div class="container">
 
-	
+
 	<div class="container" style="width: 60%; margin: 0 auto;">
 
 		<h1 class="form-signin-heading" align="center">Create Account</h1>
@@ -41,7 +41,8 @@
 
 		    <div class="row">
 		    <div class="form-group">
-			
+
+			<input type="text" name="username" class="form-control" placeholder="Username" required>
 			<input type="email" name="email" class="form-control" placeholder="E-mail" required>
 
 			<select name="age" class="form-control">
@@ -87,7 +88,7 @@
 
 		    </div>
 		    </div>
-	
+
 		    <br>
 
 		    <div class="row">
@@ -104,7 +105,7 @@
 			<span id="confirmMessage" class="confirmMessage" style="display: block; margin: 0px auto; text-align: center;font-size: 16px;"></span>
 
 			<br>
-		
+
 		    </div>
 		    </div>
 
@@ -116,7 +117,7 @@
 
     	<hr class="featurette-divider" style="border-color: black">
 
-<?php 
+<?php
 	require '../shared/footer.php';
 ?>
 

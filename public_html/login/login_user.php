@@ -1,10 +1,10 @@
 
-<?php 
+<?php
 	require '../shared/header-tier1-signin.php';
 ?>
 <body>
 
-<?php 
+<?php
 	require '../shared/nav-simple-tier1.php';
 ?>
 
@@ -20,19 +20,20 @@
 
 	}
 
-	$con = mysqli_connect("localhost", "root", "", "auditory_training");
+	$con = mysqli_connect("ecurri3.mysql.uic.edu", "ecurri3-rw", "Forget1900!", "ecurri3");
 
 	if (mysqli_connect_errno()) {
                  echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
 
-	$username = mysqli_real_escape_string($con, $_POST['username']);
-        $password = mysqli_real_escape_string($con, $_POST['password']);
+	$email = mysqli_real_escape_string($con, $_POST['email']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+    $password = md5($password);
 
-	$result = mysqli_query($con, "SELECT * FROM users");
+	$result = mysqli_query($con, "SELECT * FROM auditory_users");
 
 	while($row = mysqli_fetch_array($result)){
-		if(strtoupper($username) == strtoupper( $row['username'])){
+		if(strtoupper($email) == strtoupper( $row['email'])){
 			if($password == $row['password']){
 				session_regenerate_id();
 				$_SESSION['sess_user_id'] = $row['id'];
@@ -53,7 +54,7 @@
 		}
 	}
 
-	header("location: login-error-username.php");
+	header("location: login-error-email.php");
 
 	mysqli_close($con);
 

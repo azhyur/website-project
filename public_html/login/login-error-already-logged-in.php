@@ -1,10 +1,10 @@
 
-<?php 
+<?php
 	require '../shared/header-tier1-signin.php';
 ?>
 <body>
 
-<?php 
+<?php
 	require '../shared/nav-simple-tier1.php';
 ?>
 
@@ -12,41 +12,53 @@
 
 
 		<div class="container">
+		
+			<h2 class="form-signin-heading" align="center">Login</h2>
 
-			<form class="form-signin" action="login_user.php" method="post">
+			<center>
 
-				<h2 class="form-signin-heading" align="center">Login</h2>
+			<div class="alert alert-danger" style="width: 50%;" role="alert">
 
-				<div class="alert alert-danger" role="alert">
+			    	<strong>You are already logged in.</strong>
 
-			    	    <center>
+			</div>
 
-			    	    <strong>You are already logged in.</strong>
+			</center>
 
-			    	    </center>
+			<form class="form-inline" action="login_user.php" method="post" style="text-align:center;">
 
-				</div>
+				<div class="row">
+		    		<div class="form-group">
 
-				<input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+					<input type="text" name="email" class="form-control" placeholder="Email" required autofocus>
+					<input type="password" name="password" class="form-control" placeholder="Password" required>
 
-				<input type="password" name="password" class="form-control" placeholder="Password" required>
+		    		</div>
+		    		</div>
+			
+				<br>
 
-				<input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+				<center><input class="btn btn-lg btn-primary btn-block" style="width:25%;" type="submit" value="Login"></center>
 
 			</form>
 
-			<center> <h3><a href="../password_recovery/password_recovery_form.php">Forgot Password?</a></h3> </center>
+			<div class="row">
+		    	<div class="form-group">
+				<center> <h3><a href="../password_recovery/password_recovery_form.php">Forgot Password?</a></h3> </center>
+				<center> <h3><a href="../registration/registration.php">Not Registered Yet?</a></h3> </center>
+			</div>
+			</div>
 
 		</div>
 
 	<hr class="featurette-divider" style="border-color: black">
 
-<?php 
+<?php
 require '../shared/footer.php';
 ?>
 
     </div>
-		
+
 	<!-- jQuery -->
     	<script src="js/jquery.js"></script>
 

@@ -30,6 +30,7 @@
     else{
         echo "<li><a href=\"trainings/\">Trainings</a></li>";
         echo "<li><a href=\"profile/profile.php\">Profile</a></li>";
+        echo "<li><a href=\"profile/logout_user.php\">Logout</a></li>";
     }
 ?>
                 </ul>
