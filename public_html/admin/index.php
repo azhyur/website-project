@@ -25,6 +25,7 @@
                     <label for="last-name">Last Name</label>
                     <input type="text" name="last-name" class="form-control" placeholder="Doe">
                 </div>
+                <!-- TODO DO LANGUANGE AND EMAIL -->
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
         </div>
