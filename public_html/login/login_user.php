@@ -28,6 +28,7 @@
 
 	$email = mysqli_real_escape_string($con, $_POST['email']);
     $password = mysqli_real_escape_string($con, $_POST['password']);
+    $password = md5($password);
 
 	$result = mysqli_query($con, "SELECT * FROM auditory_users");
 
