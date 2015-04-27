@@ -83,8 +83,13 @@
             <h2 class="featurette-heading">Have Questions?
                 <span class="text-muted"></span>
             </h2>
-            <p class="lead">Q: How do I participate in the research?<br/>A: Please see the contacts information.<br/>
-            Q: How long does each training take?<br/>A: At most 5 minutes, and you can finish them later and come back.
+            <p class="lead">Q: What will I be tested on?<br/>A: Research tested speech, music, and environment sounds.<br/>
+            Q: What kind of trainings do you offer?<br/>
+            A: Training modules that adjust to you level of hearing such as scene scenarios, identify sounds with images,.
+            <li>Identify sounds with image buttons</li>
+            <li>Have a scene of environmental sounds e.g. streets, nature.</li>
+            <li>Sequence of sounds, identify at the end what the sound is.</li>
+            <li>Drag-and-drop after the order of sounds listened.</li>
             </p>
         </div>
 
