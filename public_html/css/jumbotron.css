@@ -33,7 +33,7 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .container {
     max-width: 730px;
   }
@@ -49,19 +49,19 @@ body {
     margin-left: auto
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     .container-custom {
         width: 750px
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 760px) {
     .container-custom {
         width: 970px
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 760px) {
     .container-custom {
         width: 1170px
     }
@@ -74,19 +74,19 @@ body {
     margin-left: auto
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     .navbar navbar-default navbar-fixed-top topnav {
         width: 750px
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 760px) {
     .navbar navbar-default navbar-fixed-top topnav {
         width: 970px
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 760px) {
     .navbar navbar-default navbar-fixed-top topnav {
         width: 1170px
     }
@@ -116,7 +116,7 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
