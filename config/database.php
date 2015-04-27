@@ -31,6 +31,15 @@ class dbController
     
     }
 
+    /*
+     * performs an insert and returns the id generated
+     */
+    public function executeInsert($query)
+    {
+        mysqli_query($this->connection, $query);
+        return mysqli_insert_id($this->connection);
+    }
+
 }
 
 ?>
