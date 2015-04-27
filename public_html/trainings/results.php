@@ -19,7 +19,7 @@
 			</div>
 			<div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 10px;">
             <p>
-            <a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="start.php?t="<?php echo $trainingResult[0]['training_id']; ?>>Restart</a>
+            <a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="start.php?t=<?php echo $trainingResult[0]['training_id']; ?>">Restart</a>
             </p>
             <p>
 				<a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="index.php">Return to trainings</a>

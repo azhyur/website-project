@@ -49,7 +49,7 @@
 	}
 
 	//Password length too short
-	if(strlen($POST_['password']) < 8){
+	if(strlen($_POST['password']) < 8){
 	    header("location: registration-error-password-length.php");
 	    exit();
 	}

@@ -22,8 +22,8 @@
                 <h2>Completed Trainings</h2>
                 <hr>
 <?php
-    session_start();
-    $trainingResults = $dbCon->executeSelect("SELECT * FROM training_results LEFT JOIN trainings ON (training_results.training_id = trainings.id) WHERE " . $_SESSION['sess_user_id']);
+    error_log($_SESSION['sess_user_id']);
+    $trainingResults = $dbCon->executeSelect("SELECT * FROM training_results LEFT JOIN trainings ON (training_results.training_id = trainings.id) WHERE user_id = " . $_SESSION['sess_user_id']);
     if(!count($trainingResults)) {
         echo "<p>No completed trainings</p>";
     } else {
@@ -41,7 +41,7 @@
 <?php
         $date = date_create($trainingResults['start_datetime']);
         foreach($trainingResults as $trainingResults) {
-            echo"<tr class=\"result-detail\" id=\"". $trainingResults['name'] ."\">\n";
+            echo"<tr class=\"result-detail\" id=\"". $trainingResults['id'] ."\">\n";
             echo "<td><span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span> " . $trainingResults['name'] . "</td><td>" . date_format($date,"Y/m/d") . "</td><td>" . $trainingResults['answered_count'] . "</td><td>" . $trainingResults['correct_count'] . "</li>";
             echo"</tr>\n";
         }
