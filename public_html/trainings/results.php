@@ -17,8 +17,13 @@
             <h1><?php if($correct == $total) { echo "Congratulations!"; } else { echo "Nice Try!";} ?></h1>
                 <h2>You answered <?php echo $correct; ?> out of <?php echo $total; ?> correctly!</h2>
 			</div>
-			<div class="col-md-2 col-md-offset-5 text-center" style="margin-top: 10px;">
-				<a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="index.php">Restart</a>
+			<div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 10px;">
+            <p>
+            <a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="start.php?t="<?php echo $trainingResult[0]['training_id']; ?>>Restart</a>
+            </p>
+            <p>
+				<a class="btn btn-large btn-primary" style="padding: 10px 40px; font-size: 20px;" href="index.php">Return to trainings</a>
+            </p>
 			</div>
 		</div>
 		<hr>
