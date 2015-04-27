@@ -22,8 +22,8 @@
                 <h2>Completed Trainings</h2>
                 <hr>
 <?php
-    session_start();
-    $trainingResults = $dbCon->executeSelect("SELECT * FROM training_results LEFT JOIN trainings ON (training_results.training_id = trainings.id) WHERE " . $_SESSION['sess_user_id']);
+    error_log($_SESSION['sess_user_id']);
+    $trainingResults = $dbCon->executeSelect("SELECT * FROM training_results LEFT JOIN trainings ON (training_results.training_id = trainings.id) WHERE user_id = " . $_SESSION['sess_user_id']);
     if(!count($trainingResults)) {
         echo "<p>No completed trainings</p>";
     } else {
