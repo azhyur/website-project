@@ -16,6 +16,7 @@
     
     <!-- Custom CSS -->
     <link href="../css/one-page-wonder.css" rel="stylesheet">
+    <link href="../css/misc.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="../img/rush_logo.ico">
 
