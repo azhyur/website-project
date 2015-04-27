@@ -32,7 +32,7 @@
 	if(strlen($_POST['q1']) < 1 || strlen($_POST['q2']) < 1 || strlen($_POST['q3']) < 1 || strlen($_POST['q4']) < 1)
 		header("location: questionnaire-form.php");
 
-	$sql="UPDATE auditory_users SET gender='$a1', device='$a2', duration='$a3', experience='$a4' WHERE id='$userid'";
+	$sql="UPDATE users SET gender='$a1', device='$a2', duration='$a3', experience='$a4' WHERE id='$userid'";
 	if(!mysqli_query($con, $sql)){
 		die('Error: ' . mysqli_error($con));
 	}
