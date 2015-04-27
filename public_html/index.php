@@ -80,16 +80,17 @@
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
            <img class="featurette-image img-circle img-responsive pull-left" src="img/faqs.png"alt="http://placehold.it/250x250">
-            <h2 class="featurette-heading">Have Questions?
+            <h2 class="featurette-heading">
                 <span class="text-muted"></span>
             </h2>
-            <p class="lead">Q: What will I be tested on?<br/>A: Research tested speech, music, and environment sounds.<br/>
+            <p class="lead">Q: What will I be tested on?<br/>A: Research tested speech, music, and environment sounds.<br/><br/>
             Q: What kind of trainings do you offer?<br/>
-            A: Training modules that adjust to you level of hearing such as scene scenarios, identify sounds with images,.
-            <li>Identify sounds with image buttons</li>
-            <li>Have a scene of environmental sounds e.g. streets, nature.</li>
-            <li>Sequence of sounds, identify at the end what the sound is.</li>
-            <li>Drag-and-drop after the order of sounds listened.</li>
+            A: Training modules that adjust to you level of hearing such as:
+            <div class="col-lg-3"><p><li>Identify sounds with image buttons</li></p>
+            <p><li>Have a scene of environmental sounds e.g. streets, nature.</li></p>
+            <p><li>Sequence of sounds, identify at the end what the sound is.</li></p>
+            <p><li>Drag-and-drop after the order of sounds listened.</li></p>
+            </div>
             </p>
         </div>
 
