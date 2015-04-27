@@ -41,7 +41,7 @@
 <?php
         $date = date_create($trainingResults['start_datetime']);
         foreach($trainingResults as $trainingResults) {
-            echo"<tr class=\"result-detail\" id=\"". $trainingResults['name'] ."\">\n";
+            echo"<tr class=\"result-detail\" id=\"". $trainingResults['id'] ."\">\n";
             echo "<td><span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span> " . $trainingResults['name'] . "</td><td>" . date_format($date,"Y/m/d") . "</td><td>" . $trainingResults['answered_count'] . "</td><td>" . $trainingResults['correct_count'] . "</li>";
             echo"</tr>\n";
         }
