@@ -5,7 +5,7 @@
     $trainingId = $_GET["t"];
 
     $trainings = $dbCon->executeSelect("SELECT * FROM trainings WHERE id = " . $trainingId);
-	$sounds = $dbCon->executeSelect($con, "SELECT * FROM trainings_sounds WHERE training_id = " . $trainingId);
+	$sounds = $dbCon->executeSelect("SELECT * FROM trainings_sounds WHERE training_id = " . $trainingId);
 
 
     $soundCount = count($sounds);
