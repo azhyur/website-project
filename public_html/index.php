@@ -77,7 +77,18 @@
 
 
       <hr class="featurette-divider" style="border-color: black">
+        <!-- Third Featurette -->
+        <div class="featurette" id="contact">
+           <img class="featurette-image img-circle img-responsive pull-left" src="img/faqs.png"alt="http://placehold.it/250x250">
+            <h2 class="featurette-heading">Have Questions?
+                <span class="text-muted"></span>
+            </h2>
+            <p class="lead">Q: How do I participate in the research?<br/>A: Please see the contacts information.<br/>
+            Q: How long does each training take?<br/>A: At most 5 minutes, and you can finish them later and come back.
+            </p>
+        </div>
 
+      <hr class="featurette-divider" style="border-color: black">
 
 <?php
     require 'shared/footer.php';
